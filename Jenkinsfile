@@ -19,7 +19,7 @@ pipeline {
         stage('checkout') {
             steps {
                  script{
-                       git branch: 'main', url: 'https://github.com/PSSahana/NewOne.git';
+                       git branch: 'main', url: 'https://github.com/poornachander30/Jenkins.git';
                     }
                 }
             }
