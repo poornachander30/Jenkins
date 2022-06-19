@@ -275,10 +275,4 @@ resource "null_resource" "result" {
   }
 }
 
-#Test the application
-resource "null_resource" "running_the_website" {
-    depends_on = [null_resource.Write_Image]
-    provisioner "local-exec" {
-    command = "start chrome ${aws_instance.Web[0].public_ip}"
-  }
-}
+
