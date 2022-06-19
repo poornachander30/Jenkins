@@ -19,10 +19,7 @@ pipeline {
         stage('checkout') {
             steps {
                  script{
-                        dir("terraform")
-                        {
-                            git "https://github.com/poornachander30/Jenkins.git"
-                        }
+                       git branch: 'main', url: 'https://github.com/PSSahana/NewOne.git';
                     }
                 }
             }
